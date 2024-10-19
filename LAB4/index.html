@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learn CSS with Me</title>
+        <style type="text/css">
+            body
+            {
+                background-color:#dddddd;
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: url("img/bg.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .heading-blue
+            {
+                /* Override default heading font size*/
+                font-size: 18pt;
+                color: blue;
+            }
+            .heading
+            {
+                font-size: 26pt;
+                /* Block Text */
+                font-weight: 600;
+                /* Force a single line break. */
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .sub-heading
+            {
+                font-size: 23pt;
+                font-weight: 600;
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Formatting Content with CSS</h1>
+
+            We will explore how to use CSS to manipulate how content is displayed.
+
+        </header>
+
+        <main>
+            <section>
+                <h2 class="heading-blue">Custom Headings:</h2>
+
+                <!-- Span tags don't have any default formatting. -->
+                 <span class="heading">This would be a heading 1 tag.</span>
+
+                 <span class="sub-heading">This would be a heading 2 tag.</span>
+            </section>
+
+            <section>
+                <h2 class="heading-blue">Cascading Styles:</h2>
+
+                <p class="italics">
+                    <span class="sub-heading">Nested span tag will be italized too!</span>
+                    "A computer would deserve to be called <span class="bold-text red-text">intelligent</span>
+                    if it could deceive a human into believing that it was human."
+                    <br>
+                    <br>
+                    Alan Turing
+                </p>
+            </section>
+
+            <section>
+
+                <h2 class="heading-blue">Formatting Table:</h2>
+
+                This table will have an outside border and cell borders.
+
+                <table id="table-with-border">
+                    <tr>
+                        <td>Monday</td>
+                        <td>Tuesday</td>
+                        <td>Wednesday</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Friday</td>
+                        <td>Saturday</td>
+                    </tr>
+                </table>
+
+                This table won't have an outside border but the cells will along with padding
+                <br>
+                <br>
+
+                <table id="table-with-padding">
+                    <tr>
+                        <!--Inline formatting-->
+                        <td style="background-color:#ffffff;">January</td>
+                        <td style="background-color:#ffffff;">Febuary</td>
+                        <td style="background-color:#ffffff;">March</td>
+                    </tr>
+                    <tr>
+                        <td>Apri</td>
+                        <td>May</td>
+                        <td>June</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>August</td>
+                        <td>September</td>
+                    </tr>
+                    <tr>
+                        <td>October</td>
+                        <td>November</td>
+                        <td>December</td>
+                    </tr>
+
+                </table>
+                
+            </section>
+        </main>
+    </body>
+</html>

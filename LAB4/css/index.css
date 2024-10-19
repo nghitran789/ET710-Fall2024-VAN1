@@ -1,0 +1,28 @@
+.italics
+{
+    font-style: italic;
+}
+.bold-text
+{
+    font-weight: 600;
+}
+.red-text
+{
+    color: red;
+}
+#table-with-border
+{
+    border: solid black 1px;
+    /*Format all margins for content in single rule. */
+    margin: 15px 0px 10px 0px;
+}
+td
+{
+    border: solid black 1px;
+}
+/* Add padding and width to all child td tags */
+#table-with-padding td
+{
+    padding:10px;
+    width: 100px;
+}
