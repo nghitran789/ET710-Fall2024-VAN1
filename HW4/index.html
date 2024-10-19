@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animating Boxes using CSS and HTML</title>
+        <style type="text/css">
+            .box-text
+            {
+                font-size: 18px;
+                display: flex;
+                justify-content: center;  /* Aligns text horizontally */
+                align-items: center;      /* Aligns text vertically */
+                height: 100px;            /* Set a height for the div */
+            }
+            #box1 {
+                margin: 10px 0px 10px 0px;
+                width: 100px;
+                height: 100px;
+                background: red;
+                -webkit-animation: box1 6s; /* Chrome, Safari, Opera */
+                animation: box1 5s;
+            }
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes box1 {
+                from {background: red;}
+                to {background: yellow;}
+            }
+            /* Standard syntax */
+            @keyframes box1 {
+                from {background: red;}
+                to {background: yellow;}
+            }
+
+            #box2 {
+                margin: 10px 0px 10px 0px;
+                width: 100px;
+                height: 100px;
+                background: purple;
+                -webkit-animation: box2 6s;
+                animation: box2 5s;
+            }
+            @-webkit-keyframes box2 {
+                from {background: purple;}
+                to {background: brown;}
+            }
+            @keyframes box2 {
+                from {background: purple;}
+                to {background: brown;}
+            }
+        </style>
+        <link rel="stylesheet" href="css/animation.css">
+    </head>
+    <body>
+        <h1>Animating Boxes, Enjoy!</h1>
+
+        <section>
+            <div id="box1" class="box-text">
+                Box 1
+            </div>
+        </section>
+
+        <section>
+            <div id="box2" class="box-text">
+                Box 2
+            </div>
+        </section>
+
+        <section>
+            <div id="box3" class="box-text">
+                Box 3
+            </div>
+        </section>
+    </body>
+</html>
