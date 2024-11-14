@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Function Examples:</title>
+        <script type="text/javascript">
+            function changePage(src) {
+                document.getElementById("myIframe").src = src;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Function Examples:</h1>
+        <ul>
+            <li>
+                <a href="#" onclick="changePage('name-function.html')">Named</a>
+            </li>
+            <li>
+                <a href="#" onclick="changePage('anonymous-function.html')">Anonymous</a>
+            </li>
+            <li>
+                <a href="#" onclick="changePage('parameters.html')">Parameters</a>
+            </li>
+            <li>
+                <a href="#" onclick="changePage('return-function.html')">Return Statement</a>
+            </li>
+        </ul>
+
+        <iframe id="myIframe" src="name-function.html" height="600" width="100%"></iframe>
+    </body>
+</html>

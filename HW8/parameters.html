@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h1>JavaScript Function Example</h1>
+        <div id="message"></div>
+        <script type="text/javascript">
+            function myFunctionWithParameters(param1, param2, param3) {
+                let message = param1 + "<br>";
+                message += param2 + "<br>";
+                message += param3;
+
+                // We used innerHTML because we need to render HTML tags in our message.
+                document.getElementById("message").innerHTML = message;
+            }
+
+            let number1 = 5;
+            let number2 = 10;
+            let number3 = 15;
+
+            // Using variables
+            myFunctionWithParameters(number1, number2, number3);
+
+            // Using literal numbers
+            //myFunctionWithParameters(30, 50, 10);
+
+            // Using expressions and variables
+            //myFunctionWithParameters(number1 + 5, number3, 6 * 2);
+        </script>
+    </body>
+</html>
