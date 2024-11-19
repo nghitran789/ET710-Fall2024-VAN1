@@ -30,7 +30,3 @@ form.addEventListener("submit", function(event) {
     form.reset();
     form.classList.remove('was-validated');
 }); 
-
-
-
-
