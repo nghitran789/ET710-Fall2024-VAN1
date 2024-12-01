@@ -22,8 +22,8 @@ function checkIfWeekend(today = "")
     // 0 - 6
     let currentDayOfWeek = date.getUTCDay();
 
-    //Check if it's Saturday (6), or Sunday (0)
-    if (currentDayOfWeek === 6 || currentDayOfWeek === 0) {
+    //Check if it's Friday (5) Saturday (6), or Sunday (0)
+    if (currentDayOfWeek === 5 || currentDayOfWeek === 6 || currentDayOfWeek === 0) {
         return true;
     } else {
         return false;
