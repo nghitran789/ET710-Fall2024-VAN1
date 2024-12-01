@@ -4,7 +4,7 @@ let operation = null;
 
 const previousNumberElement = document.getElementById('previous-number');
 const currentNumberElement = document.getElementById('current-number');
-const operationNumberElement = document.getElementById('operation');
+const operationElement = document.getElementById('operation');
 
 function calculateResult() {
     if (previousNumber === '' || currentNumber === '' || operation === null) {
@@ -30,6 +30,42 @@ function calculateResult() {
             break;
         default:
             return;
-        
     }
+
+    currentNumber = result.toString();
+    previousNumber = '';
+    operation = null;
+    updateDisplay();
+}
+
+function appendNumber(number) {
+    currentNumber += number.toString();
+    updateDisplay();
+}
+
+function setOperation(op) {
+    if (currentNumber === '') {
+        return;
+    }
+
+    if (previousNumber !== '') {
+        calculateResult();
+    }
+    operation = op;
+    previousNumber = currentNumber;
+    currentNumber = '';
+    updateDisplay();
+}
+
+function clearCalculator() {
+    currentNumber = '';
+    previousNumber = '';
+    operation = null;
+    updateDisplay();
+}
+
+function updateDisplay() {
+    previousNumberElement.textContent = previousNumber;
+    currentNumberElement.textContent = currentNumber || '0';
+    operationElement.textContent = operation || '';
 }
